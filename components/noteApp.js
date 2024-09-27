@@ -12,12 +12,12 @@ const Home = () => {
             });
 
             if (response.ok) {
-                console.log('Note saved successfully');
+                alert('Note saved successfully');
             } else {
-                console.error('Failed to save note');
+                alert('Failed to save note');
             }
         } catch (err) {
-            console.error('Failed to save note', err);
+            alert('Failed to save note', err);
         }
     };
 
